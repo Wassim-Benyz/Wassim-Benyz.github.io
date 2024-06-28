@@ -1,0 +1,186 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+
+\usepackage{paracol}
+\usepackage{hyperref}
+
+
+\ifxetexorluatex
+ 
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\input{pubs-num.tex}
+
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Ouassim Benyezzar}
+\tagline{Computer Science student}
+
+
+\photoR{2.8cm}{OUASSIM PICTURE.png}
+
+
+\personalinfo{%
+  
+  \email{ouassim.benyezzar@gisma-student.com}
+  \phone{+491782835759}
+  \mailaddress{Nazarethkirchstraße 51, B.42, Berlin, 13347}
+  \location{Berlin, Germany}
+  \homepage{https://wassim-benyz.github.io}
+  \twitter{@wassimbenyezzar}
+  \linkedin{wassimbenyezzar}
+  \github{Wassim-Benyz}
+  
+  
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Creative Producer}{HAVA Agency}{Aug 2022 -- Jan 2024}{Constantine, Algeria}
+\begin{itemize}
+\item Created Designs, Concepts and sample layouts based on knowledge of layout and aesthetic design concepts
+\item Performed Video and sound editing for divers ads while ensuring high quality media productions.
+\end{itemize}
+
+\divider
+
+\cvevent{Lawyer's Assistant}{Mr. Mouloud Zendaoui, ESQ}{Dec 2020 -- August 2022}{Constantine, Algeria}
+\begin{itemize}
+\item Reviewed Edited and proofread legislation drafts for proper grammar spelling, punctuation and formatting.
+\item Developed positive working relationship with courts, clients, law enforcement members and attorneys
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{Web page development}{HTML 5, CSS 3, Git, LaTeX}{}{}
+\begin{itemize}
+\item Made a portfolio web page using the technologies listed above.
+\end{itemize}
+
+\divider
+
+\cvevent{" Rock, Paper, Scissors !" Game.}{Python}{Project duration}{}
+created an interactive game where the player selects their choice (rock, paper, or scissors) and competes against the computer.
+
+\medskip
+
+\cvsection{A Day of My Life}
+
+
+\wheelchart{1.5cm}{0.5cm}{%
+  6/8em/accent!30/{Sleep,\\Like a baby},
+  3/8em/accent!40/Playing guitar,
+  8/8em/accent!60/Study,
+  2/10em/accent/Sports,
+  5/6em/accent!20/Hanging out with friends
+}
+
+
+
+\switchcolumn
+
+\cvsection{My Life Philosophy}
+
+\begin{quote}
+``Commitment to excellence and a passion for continuous improvement drive every aspect of my work.''
+\end{quote}
+
+\cvsection{Most Proud of}
+
+\cvachievement{\faTrophy}{1st Place Award}{Won a music talent show competition host by US Embassy in Algiers}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Community Involvement}{Volunteered in planting trees.}
+
+\divider
+
+\cvachievement{\faHeartbeat}{Organizing Art Shows}{Volunteered in making art shows for foster homes.}
+
+\cvsection{Strengths}
+
+\cvtag{Adaptability}
+\cvtag{Leadership}\\
+\cvtag{Attention to detail}
+
+\divider\smallskip
+
+\cvtag{Python}
+\cvtag{HTML}\\
+\cvtag{LATEX}
+
+\cvsection{Languages}
+
+\cvskill{English}{5}
+\divider
+
+\cvskill{french}{4}
+\divider
+
+\cvskill{Arabic}{5} 
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{B.Sc.\ Computer Science}{Your University}{Sept 2023 -- Present}{}
+Thesis title: Wonderful Research
+
+\divider
+
+\cvevent{MBA.\ Law}{Université Fréres Mentouri de Constantine}{Sept 2016 -- June 2022}{}
+
+\divider
+
+\cvevent{Baccalaureat}{September 2013 -- August 2016}{}
+
+
+\end{paracol}
+
+
+\end{document}
